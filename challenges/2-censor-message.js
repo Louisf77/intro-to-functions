@@ -16,16 +16,27 @@
 
 // pseudo code:
 // ============
+function censorMessage(message,banList){
 // set rawWords to the list of strings created by separating the string message into sub-strings at every space (' ')
-
+    let rawWords = message.split(' ')
 // set scrubbedWords to an empty list
-
+    let scrubbedWords = []
 // for each string word in rawWords
+    for (let word of rawWords){
 // 	set lowercaseWord to lowercase(word)
+        let lowercaseWord = word.toLowerCase()
 //   if lowercaseWord is contained in the list banList
+        if (banList.includes(lowercaseWord)) {
 //     insert the string '*****' at the end of scrubbedWords
+            scrubbedWords.push('*****')
+        }
 //   else
+        else {
 //     insert word at the end of scrubbedWords
+            scrubbedWords.push(word)
+        }
+    }
+}
 
 // set scrubbedMessage to the string created by joining together every string in scrubbedWords with a space (' ') as a join character
 
