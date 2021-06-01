@@ -1,5 +1,5 @@
 // Write a function that, given a full message and a list of words, returns a single string that represents a 'censored' version of the original message: all words from the list must be scrubbed out and replaced with five asterisks (*****).
-
+"use strict"
 // The censor must scrub out matches that are case insensitive.
 
 // You may assume that each string in the list is a lowercase single word.
