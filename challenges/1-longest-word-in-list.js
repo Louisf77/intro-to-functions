@@ -1,5 +1,5 @@
 // Write a function that, given a list of strings, returns the string which has the greatest character count (including duplicates).
-
+'use strict'
 // When there are multiple string which are tied for largest character count, return the string that occurs earliest in the list.
 
 // You may assume that each string in the list is a single word.
