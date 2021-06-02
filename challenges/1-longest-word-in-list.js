@@ -15,6 +15,11 @@
 
 // pseudo code:
 // ============
+/**
+ * Given a list of strings return the string that has the greatest character count
+ * @param {array} listOfStrings -List of inputted strings
+ * @returns {string} - Returns string with greatest character count
+ */
 function longestInList(listOfStrings){
     // set longest to first string in words
     let longest = listOfStrings[1]
