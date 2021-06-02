@@ -16,6 +16,12 @@
 
 // pseudo code:
 // ============
+/**
+ * Given a full message and a list of words, returns a single string that represents a 'censored' version of the original message: all words from the list must be scrubbed out and replaced with five asterisks (*****)
+ * @param {string} message - Original message requiring censorship
+ * @param {array} banList - list of strings to be censored
+ * @returns {string} - String replicating message but with censored words replaced by *****
+ */
 function censorMessage(message,banList){
 // set rawWords to the list of strings created by separating the string message into sub-strings at every space (' ')
     let rawWords = message.split(' ')
