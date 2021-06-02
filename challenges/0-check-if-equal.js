@@ -15,6 +15,12 @@
 
 // pseudo code:
 // ============
+/**
+ * Given two numbers, return a boolean to state whether they are equal
+ * @param {number} a - First number
+ * @param {number} b - Second Number
+ * @returns {boolean} - Returns a boolean stating whether a = b
+ */
 function isEqual(a,b){
     if (a === b) {
         return 'True'
